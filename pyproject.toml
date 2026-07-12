@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ningmengyun-jxc"
+version = "0.1.0"
+description = "ningmengyun jinxiaocun open platform async Python SDK"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "ningmengyun-jxc contributors"}
+]
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+cli = ["click>=8.0"]
+
+[project.urls]
+Homepage = "https://open2.ningmengyun.com/"
+Source = "https://github.com/ningmengyun-jinxiaocun"
+
+[tool.setuptools.packages.find]
+where = ["src"]
